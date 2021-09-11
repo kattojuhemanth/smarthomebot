@@ -17,22 +17,22 @@ def hel(bot,update):
 def lon(bot,update):
   chat_id=bot.message.chat_id
   aio.send_data(light.key, 1)
-  bot.message.reply_text('Okay, turning on the light...')
+  bot.message.reply_text("Okay, turning on the light...\nCommands\n\tfor turning on the light - '/Turnonlight'\n\tfor turning off the light - '/Turnofflight'\n\tfor turning on the fan - '/Turnonfan'\n\tfor turning off the fan - '/Turnofffan'")
   print('LIGHT ON')
 def lof(bot,update):
   chat_id=bot.message.chat_id
   aio.send_data(light.key, 0)
-  bot.message.reply_text('Okay, turning off the light...')
+  bot.message.reply_text("Okay, turning off the light...\nCommands\n\tfor turning on the light - '/Turnonlight'\n\tfor turning off the light - '/Turnofflight'\n\tfor turning on the fan - '/Turnonfan'\n\tfor turning off the fan - '/Turnofffan'")
   print('LIGHT OFF')
 def fon(bot,update):
   chat_id=bot.message.chat_id
   aio.send_data(fan.key, 1)
-  bot.message.reply_text('Okay, turning on the fan...')
+  bot.message.reply_text("Okay, turning on the fan...\nCommands\n\tfor turning on the light - '/Turnonlight'\n\tfor turning off the light - '/Turnofflight'\n\tfor turning on the fan - '/Turnonfan'\n\tfor turning off the fan - '/Turnofffan'")
   print('FAN ON')
 def fof(bot,update):
   chat_id=bot.message.chat_id
   aio.send_data(fan.key, 0)
-  bot.message.reply_text('Okay, turning off the fan...')
+  bot.message.reply_text("Okay, turning off the fan...\nCommands\n\tfor turning on the light - '/Turnonlight'\n\tfor turning off the light - '/Turnofflight'\n\tfor turning on the fan - '/Turnonfan'\n\tfor turning off the fan - '/Turnofffan'")
   print('FAN OFF')
 def wrong(bot,update):
   chat_id=bot.message.chat_id
