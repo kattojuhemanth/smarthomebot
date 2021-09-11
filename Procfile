@@ -1,1 +1,1 @@
-worker: python SmartHomeBot.ipynb
+worker: python SmartHomeBot.py
