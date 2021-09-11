@@ -12,7 +12,7 @@ def start(bot,update):
   print('STARTED')
 def hel(bot,update):
   chat_id=bot.message.chat_id
-  bot.message.reply_text("Commands\n\tfor turning on the light - '/Turn on light'\n\tfor turning off the light - '/Turn off light'\n\tfor turning on the fan - '/Turn on fan'\n\tfor turning off the fan - '/Turn off fan'")
+  bot.message.reply_text("Commands\n\tfor turning on the light - '/Turnonlight'\n\tfor turning off the light - '/Turnofflight'\n\tfor turning on the fan - '/Turnonfan'\n\tfor turning off the fan - '/Turnofffan'")
   print('HELPED')
 def lon(bot,update):
   chat_id=bot.message.chat_id
@@ -44,13 +44,13 @@ def main(bot,update):
     start(bot,update)
   elif (mes == "/help" ):
     hel(bot,update)
-  elif (mes == "Turn on light" ):
+  elif (mes == "/Turnonlight" ):
     lon(bot,update)
-  elif (mes == "Turn off light"):
+  elif (mes == "/Turnofflight"):
     lof(bot,update)
-  elif (mes == "Turn on fan" ):
+  elif (mes == "/Turnonfan" ):
     fon(bot,update)
-  elif (mes == "Turn off fan" ):
+  elif (mes == "/Turnofffan" ):
     fof(bot,update)
   else :
     wrong(bot,update)
