@@ -52,7 +52,7 @@ def main(bot,update):
     fon(bot,update)
   elif (mes == "Turn off fan" ):
     fof(bot,update)
-  else
+  else :
     wrong(bot,update)
 bot_token = '1964189139:AAHAieTfoTdxnvLokgKrRmPDYBSWk_W2nXs'
 u = Updater(bot_token,use_context=True)
