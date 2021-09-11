@@ -12,7 +12,7 @@ def start(bot,update):
   print('STARTED')
 def hel(bot,update):
   chat_id=bot.message.chat_id
-  bot.message.reply_text("Commands\n\tfor turning on the light - 'Turn on light'\n\tfor turning off the light - 'Turn off light'\n\tfor turning on the fan - 'Turn on fan'\n\tfor turning off the fan - 'Turn off fan'")
+  bot.message.reply_text("Commands\n\tfor turning on the light - '/Turn on light'\n\tfor turning off the light - '/Turn off light'\n\tfor turning on the fan - '/Turn on fan'\n\tfor turning off the fan - '/Turn off fan'")
   print('HELPED')
 def lon(bot,update):
   chat_id=bot.message.chat_id
