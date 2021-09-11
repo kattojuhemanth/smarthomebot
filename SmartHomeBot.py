@@ -12,7 +12,7 @@ def start(bot,update):
   print('STARTED')
 def hel(bot,update):
   chat_id=bot.message.chat_id
-  bot.message.reply_text('Commands\n\tTurn on light - LIGHT ON\n\tTurn off light - LIGHT OFF\n\tTurn on Fan - FAN ON\n\tTurn off fan - FAN OFF')
+  bot.message.reply_text("Commands\n\tfor turning on the light - 'Turn on light'\n\tfor turning off the light - 'Turn off light'\n\tfor turning on the fan - 'Turn on Fan'\n\tfor turning off the fan - 'Turn off fan'")
   print('HELPED')
 def lon(bot,update):
   chat_id=bot.message.chat_id
@@ -34,6 +34,10 @@ def fof(bot,update):
   aio.send_data(fan.key, 0)
   bot.message.reply_text('Okay, turning off the fan...')
   print('FAN OFF')
+def wrong(bot,update):
+  chat_id=bot.message.chat_id
+  bot.message.reply_text("Can't understand the input.Please type in /help for the help reg. the commands of bot")
+  print('WRONG INPUT')
 def main(bot,update):
   mes = bot.message.text
   if (mes == "/start" ):
@@ -48,6 +52,8 @@ def main(bot,update):
     fon(bot,update)
   elif (mes == "Turn off fan" ):
     fof(bot,update)
+  else
+    wrong(bot,update)
 bot_token = '1964189139:AAHAieTfoTdxnvLokgKrRmPDYBSWk_W2nXs'
 u = Updater(bot_token,use_context=True)
 dp = u.dispatcher
